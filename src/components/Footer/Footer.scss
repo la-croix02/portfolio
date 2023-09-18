@@ -1,0 +1,47 @@
+.footer {
+    padding: 32px 0;
+    border-top: 1px solid #ABB2BF;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        &-text {
+            color: #FFF;
+        }
+    }
+    &__media-title {
+        color: #FFF;
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 12px;
+    }
+    &__media-list {
+        display: flex;
+        gap: 8px;
+    }
+    &__bottom {
+        padding-top: 48px;
+    }
+    &__copy {
+        text-align: center;
+        color: #ABB2BF;
+    }
+    @include media(480) {
+        &__top {
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+        &__box {
+            align-items: center;
+        }
+        &__media-title {
+            text-align: center;
+        }
+    }
+}

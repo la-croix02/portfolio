@@ -1,0 +1,173 @@
+.intro {
+    padding: 62px 0 37px;
+    background: url('@/assets/images/special-bg/intro-sbg.svg') no-repeat right 610px;
+    &__about {
+        display: flex;
+        justify-content: space-between;
+        &-info {
+            max-width: 537px;
+            padding-top: 74px;
+            &-title {
+                color: #fff;
+                font-size: 32px;
+                font-weight: 600;
+                margin-bottom: 32px;
+                & span {
+                    color: #C778DD;
+                }
+            }
+            &-text {
+                max-width: 463px;
+                color: #ABB2BF;
+                line-height: 25px; /* 156.25% */
+                margin-bottom: 24px;
+            }
+            &-btn {
+                display: inline-block;
+                border: 1px solid #C778DD;
+                padding: 8px 16px;
+                color: #FFF;
+                font-weight: 500;
+                transition: .5s;
+            }
+            &-btn:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: #C778DD;
+            }
+        }
+        &-workingon {
+            border: 1px solid #ABB2BF;
+            padding: 8px;
+            max-width: 402px;
+            margin-left: 45px;
+            & span {
+                color: #ABB2BF;
+                font-weight: 500;
+            }
+            & span::before {
+                content: '';
+                width: 16px;
+                height: 16px;
+                border: 1px solid #C778DD;
+                background: #C778DD;
+                display: inline-block;
+                margin-right: 10px;
+                transform: translateY(3px);
+            }
+            & span a {
+                color: #fff;
+                font-size: 600;
+            }
+        }
+        &-photo {
+            position: relative;
+            & img {
+                display: block;
+                width: 100%;
+                object-position: 20px;
+            }
+        }
+        @include media(1024) {
+            &-info,
+            &-photo {
+                width: 50%
+            }
+            &-workingon {
+                max-width: 430px;
+            }
+        }
+        @include media(768) {
+            & {
+                flex-direction: column;
+            }
+            &-info {
+                width: 100%;
+                padding-top: 0;
+                margin-bottom: 24px;
+            }
+            &-photo {
+                width: 70%;
+                margin: 0 auto;
+            }
+        }
+        @include media(576) {
+            &-photo {
+                width: 100%;
+            }
+            &-workingon {
+                max-width: 100%;
+                margin-left: 0;
+            }
+        }
+        @include media(480) {
+            &-info-title {
+                font-size: 28px;
+            }
+        }
+    }
+
+    &__quote {
+        padding-top: 120px;
+        & blockquote {
+            max-width: 712px;
+            margin: 0 auto;
+            text-align: right;
+        }
+        &-text {
+            padding: 30px;
+            border: 1px solid #ABB2BF;
+            color: #FFF;
+            font-size: 24px;
+            font-weight: 500;
+            position: relative;
+            text-align: left;
+            &::before,
+            &::after {
+                content: '';
+                background: url('@/assets/images/quote.svg') no-repeat center;
+                background-color: #282C33;
+                width: 41px;
+                height: 28px;
+                position: absolute;
+            }
+            &::before {
+                top: -14px;
+                left: 11px;
+            }
+            &::after {
+                bottom: -14px;
+                right: 11px;
+            }
+        }
+        &-author {
+            display: inline-block;
+            text-align: right;
+            border: 1px solid #ABB2BF;
+            padding: 16px;
+            border-top: none;
+            color: #FFF;
+            font-size: 24px;
+        }
+    }
+    @include media(1024) {
+        & {
+            background: transparent;
+        }
+    }
+    @include media(768) {
+        &__quote {
+            padding-top: 60px;
+            &-text {
+                font-size: 20px;
+            }
+        }
+    }
+    @include media(480) {
+        & {
+            padding: 34px 0 37px;
+        }
+        &__quote-text {
+            font-size: 18px;
+        }
+    }
+}
