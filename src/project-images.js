@@ -1,5 +1,5 @@
 export const projectImage = {
-    'carsharing': 'src/assets/images/projects-images/carsharing-img.jpg',
-    'clock': 'src/assets/images/projects-images/clock-img.jpg',
-    'grayson': 'src/assets/images/projects-images/grayson-img.jpg'
+    'intefra': 'src/assets/images/projects-images/intefra-img.jpg',
+    'Premium-Cars': 'src/assets/images/projects-images/cars-img.jpg',
+    'sol-souls': 'src/assets/images/projects-images/souls-img.jpg'
 }

@@ -5,7 +5,7 @@ export const useProjects = defineStore({
     id: 'projects',
     state: () => ({
         url: 'https://api.github.com/users/',
-        userName: 'la-croix98',
+        userName: 'la-croix02',
         repositories: null,
         reposLanguages: null,
     }),

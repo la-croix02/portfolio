@@ -39,7 +39,7 @@ const getImg = computed(() => {
 })
 
 const getProjectUrl = computed(() => {
-    return `https://la-croix98.github.io/${proj.name}/`;
+    return `https://la-croix02.github.io/${proj.name}/`;
 })
 </script>
 
